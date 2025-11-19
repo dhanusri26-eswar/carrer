@@ -1,0 +1,169 @@
+.career-path-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.career-path-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.career-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.career-icon {
+  font-size: 40px;
+}
+
+.career-header h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.career-category {
+  background: #e8eaf6;
+  color: #667eea;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.career-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.career-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-item strong {
+  font-size: 14px;
+  color: #555;
+}
+
+.info-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+.growth-excellent {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.growth-very-good {
+  color: #8bc34a;
+  font-weight: bold;
+}
+
+.growth-good {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.growth-unlimited-potential {
+  color: #9c27b0;
+  font-weight: bold;
+}
+
+.career-skills {
+  margin-bottom: 20px;
+}
+
+.career-skills strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #e0e0e0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #555;
+}
+
+.details-btn {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.details-btn:hover {
+  background: #5a67d8;
+}
+
+.career-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.detail-section {
+  margin-bottom: 20px;
+}
+
+.detail-section h4 {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.detail-section li {
+  position: relative;
+  padding: 3px 0;
+  color: #666;
+}
+
+.detail-section li:before {
+  content: "→";
+  position: absolute;
+  left: -20px;
+  color: #667eea;
+}
+
+@media (max-width: 480px) {
+  .career-info {
+    grid-template-columns: 1fr;
+  }
+}
